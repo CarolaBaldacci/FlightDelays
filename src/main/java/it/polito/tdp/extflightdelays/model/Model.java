@@ -63,6 +63,7 @@ public class Model {
 	
 	public List<Airport> getPercorso (Airport a1, Airport a2){
 		 List<Airport> percorso = new ArrayList<>();
+		 //visita in apiezza
 		 	BreadthFirstIterator<Airport,DefaultWeightedEdge> it =
 				 new BreadthFirstIterator<>(this.grafo,a1);
 		 
@@ -73,7 +74,6 @@ public class Model {
 			 if(visitato.equals(a2))
 				 trovato = true;
 		 }
-		 
 		 
 		 //ottengo il percorso
 		 if(trovato) {
